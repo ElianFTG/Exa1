@@ -5,12 +5,10 @@ function restriccion(a, b) {
     return;
   } else {
     if (titulo.length() > 50) {
-      
-      return alert("El titulo debe tener menos de 51 caracteres");
+      return;
     } else {
       if (contenido.length() > 150) {
-        
-        return alert("El detalle debe tener menos de 151 caracteres");
+        return;
       } else {
         return "<p>" + "Titulo: " + a + " " + "Detalle: " + b + "</p>";
       }
