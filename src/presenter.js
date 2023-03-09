@@ -1,7 +1,7 @@
 import restriccion from "./restriccionTituloContenido";
 
 const titulo = document.querySelector("#titulo");
-const contenido = document.querySelector("#contenido");
+const contenido = document.querySelector("#detalle");
 const form = document.querySelector("#publicar-form");
 const div = document.querySelector("#resultado-div");
 
