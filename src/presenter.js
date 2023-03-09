@@ -1,4 +1,4 @@
-import sumar from "./sumador";
+import restriccion from "./restriccionTituloContenido";
 
 const titulo = document.querySelector("#titulo");
 const contenido = document.querySelector("#contenido");
@@ -8,5 +8,5 @@ const div = document.querySelector("#resultado-div");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  div.innerHTML = "<p>" + "Titulo: " + titulo + "Detalle: " + contenido + "</p>";
+  div.innerHTML = restriccion(titulo.value, contenido.value);
 });
