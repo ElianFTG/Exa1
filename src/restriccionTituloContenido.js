@@ -1,8 +1,14 @@
 function restriccion(a, b) {
-  if (a === "" && b === "") {
+  const titulo = toString(a);
+  if ((a === "" && b === "")) {
     return;
   } else {
-    return "<p>" + "Titulo: " + a + "Detalle: " + b + "</p>";
+    if (titulo.length() > 50) {
+      alert("El titulo debe tener menos de 51 caracteres");
+      return;
+    } else {
+      return "<p>" + "Titulo: " + a + "Detalle: " + b + "</p>";
+    }
   }
 }
 
